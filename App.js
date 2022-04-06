@@ -4,8 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from "react";
 import { View } from "react-native";
 
+import ViewItemScreen from "./app/assets/screens/ViewItemScreen";
+
 export default function App() {
-  return <viewImageScreen/>;
+  return <ViewItemScreen/>;
 }
 
 const styles = StyleSheet.create({
