@@ -6,6 +6,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import StartUpScreen from "./screens/StartUpScreen";
 import BrowseScreen from "./screens/BrowseScreen";
+import ViewItemScreen from "./screems/ViewItemScreen";
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,17 @@ export default function App() {
             headerTintColor: "#133C55",
             headerShadowVisible: false,
             title: "Browse",
+          }}
+        />
+
+        <Stack.Screen
+          name="View"
+          component={ViewItemScreen}
+          options={{
+            headerStyle: { backgroundColor: "white" },
+            headerTintColor: "#133C55",
+            headerShadowVisible: false,
+            title: "View",
           }}
         />
         
